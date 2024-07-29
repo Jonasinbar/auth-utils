@@ -1,9 +1,6 @@
 import jwt
 import os
 
-LOGIN_MANAGER_ADDRESS = 'loginmanager:50051'
-
-
 def jwt_authentication_required(return_user=False):
     def decorator(func):
         def wrapper(*args, **kwargs):
